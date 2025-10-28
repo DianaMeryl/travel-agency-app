@@ -1,0 +1,89 @@
+.discover-carousel {
+  position: relative;
+  padding: 1.25rem;
+}
+.discover-carousel__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+.discover-carousel__track {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  will-change: transform;
+}
+.discover-carousel__slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.discover-carousel__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 280px;
+}
+.discover-carousel__btns {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--color-btn-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.discover-carousel__btn picture {
+  img {
+    pointer-events: none;
+    transition: transform 0.6s ease, filter 0.3s ease;
+    transform-origin: center;
+    will-change: transform;
+  }
+}
+.discover-carousel__btn-next:hover picture {
+  img {
+    transform: rotateY(40deg) translateX(3px) scale(1.1);
+    filter: drop-shadow(-10px 0 10px rgba(240, 196, 53, 0.5));
+  }
+}
+.discover-carousel__btn-prev:hover picture {
+  img {
+    transform: rotateY(-40deg) translateX(-3px) scale(1.1);
+    filter: drop-shadow(10px 0 10px rgba(240, 196, 53, 0.5));
+  }
+}
+.discover-carousel__btn-prev {
+    transform: translate(-60px, -50%);
+  @media (min-width: 768px) {
+    left: 65px;
+  }
+}
+.discover-carousel__btn-next {
+    transform: translate(-105px, -50%);
+  @media (min-width: 768px) {
+    right: -100px;
+  }
+}
+@media (min-width: 768px) {
+  .discover-carousel__image {
+    max-width: 340px;
+  }
+}
+@media (min-width: 992px) {
+  .discover-carousel {
+    padding: 1.25rem;
+  }
+
+  .discover-carousel__image {
+    max-width: 373px;
+  }
+}
+

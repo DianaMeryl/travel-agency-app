@@ -1,0 +1,28 @@
+.companies{
+  width: 100%;
+  background-color: var(--color-accent);;
+}
+.companies__list {
+  width: 100%;
+  padding: 60px 6px 40px 6px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.companies__item {
+  flex: 1 1 20%;
+  /* width: 212px; */
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: var(--color-bg-alt);
+}
+/* .companies__img{
+  width: 218px;
+  height: 121px;
+  margin: 21px 17.4px;
+} */

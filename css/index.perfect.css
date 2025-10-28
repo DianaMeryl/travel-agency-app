@@ -1,0 +1,114 @@
+.perfect {
+  position: relative;
+  width: 100%;
+  padding-top: 15rem;
+  padding-bottom: 12.5rem;
+  min-height: 762px;
+  overflow: hidden;
+  z-index: 0;
+  background: none;
+}
+.perfect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/florence.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+@media (min-width: 992px) {
+  .perfect::before {
+    opacity: 1;
+    /* background-position: calc(50% + 9px) calc(50% - 12px); */
+  }
+}
+.perfect__info {
+  width: 100%;
+  /* margin-top: 16.5rem; */
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  align-self: flex-start;
+  background-color: var(--color-text-bg);
+  border-radius: 10px;
+  box-shadow: inset 0 -20px 40px rgba(159, 83, 1, 0.3), 0 0 0 2px white,
+    -4.8px -6px 16px rgba(38, 77, 85, 0.5);
+  /* @media (min-width: 768px) {
+    padding: 8rem 0 6rem 1rem;
+    width: 367px;
+  }
+  @media (min-width: 992px) {
+    padding: 10rem 0 8rem 1rem;
+    width: 367px;
+  } */
+  @media (min-width: 1200px) {
+    /* margin-top: 16.5rem; */
+    padding: 2.5rem;
+    width: 470px;
+  }
+  .perfect__mark {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    line-height: 0.9rem;
+    color: var(--color-info);
+    text-transform: uppercase;
+  }
+  .perfect__title {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.9rem, 4.5vw, 2.87rem);
+    font-weight: 700;
+  }
+  .perfect-line-orange__svg {
+    width: 47px;
+    height: 34px;
+    display:block;
+    overflow: hidden;
+  }
+  .perfect__text {
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom: 28px;
+    padding-right: 8px;
+    color: var(--color-text-secondary);
+    font-size: clamp(1rem, 3vw, 1.13rem);
+    font-weight: 500;
+  }
+}
+.perfect__btn {
+  width: 142px;
+  height: 53px;
+  margin-top: 13px;
+  display: block;
+  padding: 18px 30px 18px 30px;
+  font-size: 0.89rem;
+  font-weight: 700;
+  background-color: var(--color-accent);
+  color: var(--color-text-bg);
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 20px rgba(155, 11, 11, 0.5);
+  &:hover {
+    background-color: var(--color-primary);
+    box-shadow: 5px 5px 10px rgba(159, 91, 2, 0.5);
+  }
+  &.perfect__btn--darker {
+    background-color: var(--color-info);
+    &:hover {
+      background-color: var(--color-accent);
+      box-shadow: 5px 5px 10px rgba(14, 14, 14, 0.5);
+    }
+  }
+}

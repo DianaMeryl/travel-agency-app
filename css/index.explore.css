@@ -35,7 +35,7 @@
   }
   @media (min-width: 992px) {
     padding: 4.5rem 0 0.2rem 1rem;
-    width: 670px;
+    width: 686px;
   }
   .explore__mark {
     width: 100%;
@@ -51,20 +51,20 @@
   .explore__title {
     width: 100%;
     text-align: center;
-    font-size: clamp(2.1rem, 4.5vw, 2.9rem);
+    font-size: clamp(2.1rem, 4.5vw, 2.86rem);
     font-weight: 700;
     line-height: 2.3rem;
   }
-}
-.explore__text {
-  align-self: flex-start;
-  width: 100%;
-  padding-right: 8px;
-  color: var(--color-secondary);
-  text-align: center;
-  font-size: clamp(0.9rem, 2.5vw, 1.15rem);
-  font-weight: 500;
-  line-height: 1.5rem;
+  .explore__text {
+    align-self: flex-start;
+    width: 100%;
+    padding-right: 8px;
+    color: var(--color-secondary);
+    text-align: center;
+    font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
 }
 .gallery {
   width: 100%;
@@ -170,7 +170,7 @@
 }
 .gallery__btn {
   position: absolute;
-  top: 40%;
+  top: 50%;
   transform: translate(-83px, -50%);
   z-index: 10;
   width: 30px;

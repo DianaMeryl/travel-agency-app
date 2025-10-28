@@ -1,0 +1,11 @@
+ <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70px"
+          height="34"
+          style="width: 12%"
+        >
+          <path
+            d="M0 17 L3000 17"
+            style="fill: none; stroke: #fda942; stroke-width: 4px"
+          ></path>
+        </svg>
