@@ -11,7 +11,7 @@
 }
 .explore__bg {
   width: 100%;
-  min-height: 650px;
+  min-height: auto;
   padding-bottom: 40px;
   background-image: url("../assets/images/world-map-bg.webp");
   background-size: cover;
@@ -20,6 +20,7 @@
 }
 .explore__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

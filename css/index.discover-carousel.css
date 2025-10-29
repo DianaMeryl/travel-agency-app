@@ -1,6 +1,7 @@
 .discover-carousel {
   position: relative;
   padding: 1.25rem;
+  background-color: var(--color-bg-top);
 }
 .discover-carousel__viewport {
   width: 100%;

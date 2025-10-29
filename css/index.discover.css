@@ -85,3 +85,19 @@
     }
   }
 }
+.discover__contacts{
+  padding: 2rem 0 4.4rem 0;
+  background-color: var(--color-bg-top);
+}
+.discover__contact-data{
+  font-size: 1rem;
+  text-align: center;
+  span{
+    color: var(--color-btn-bg);
+  }
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    color:var(--color-accent);
+  } 
+}
