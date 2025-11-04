@@ -1,0 +1,15 @@
+  <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1200px"
+            height="33"
+            style="width: 10%"
+          >
+            <path
+              d="M0 16.5 L1200 16.5"
+              style="
+                fill: none;
+                stroke: rgba(127, 127, 127, 0.33);
+                stroke-width: 2px;
+              "
+            ></path>
+          </svg>

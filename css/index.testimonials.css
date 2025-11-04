@@ -83,13 +83,53 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--color-text-bg);
-  transition: all 0.3s ease;
   margin: 0 auto;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: var(--color-bg-top);
-  box-shadow: -2px 2px 10px rgba(95, 31, 6, 0.6);
+  box-shadow: 0 0 30px rgba(255, 94, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; 
+  overflow: visible; 
+}
+.swiper-slide.client-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(240, 74, 23, 0.6);
+}
+@keyframes pulseDual {
+  0% {
+    transform: scale(1);
+    filter: blur(2px) brightness(1.2);
+    background: radial-gradient(
+      circle,
+      rgba(255, 94, 0, 0.6),
+      rgba(255, 0, 150, 0.4)
+    );
+  }
+  50% {
+    transform: scale(1.1);
+    filter: blur(20px) brightness(1.5);
+    background: radial-gradient(
+      circle,
+      rgba(255, 0, 150, 0.6),
+      rgba(204, 77, 4, 0.4)
+    );
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(2px) brightness(1.2);
+    background: radial-gradient(
+      circle,
+      rgba(255, 94, 0, 0.6),
+      rgba(255, 0, 150, 0.4)
+    );
+  }
+}
+.swiper-slide.client-card:hover::after {
+  transform: translateY(0);
+  animation: pulseDual 2s infinite ease-in-out;
 }
 .client-card__date {
   font-size: 0.88rem;
@@ -206,3 +246,4 @@
     }
   }
 }
+

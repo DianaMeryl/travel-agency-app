@@ -231,7 +231,7 @@
   justify-content: end;
   align-items: center;
 }
-.nav__menu {
+.navig__menu {
   display: flex;
   align-items: center;
   & li {
